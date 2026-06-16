@@ -13,7 +13,7 @@ https://dlate-1201.github.io
 * **About**: QA/SQA, AI Evaluation, 자동화 테스트에 대한 관심과 학습 방향 소개
 * **Projects**: 테스트 케이스, 자동화 테스트, AI 응답 평가와 관련된 프로젝트 정리
 * **Notes / Blog**: QA 학습 기록, AI Evaluation 기준 정리, 투자 리서치 학습 기록
-* **Contact**: 이메일과 GitHub 프로필 링크
+* **Contact**: 이메일과 GitHub, LinkedIn 프로필 링크
 
 ## 사용 기술
 
