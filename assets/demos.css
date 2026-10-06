@@ -1,0 +1,13 @@
+.demo-section h2{margin-bottom:20px}
+.demo-notice{font-size:16px;line-height:1.8;max-width:760px}
+.demo-controls{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;margin:28px 0 16px;align-items:center}
+.demo-controls label{grid-column:1/-1;font-size:16px}
+.demo-controls input,.demo-controls select,.demo-controls button{font:inherit;font-size:16px;color:inherit;background:transparent;border:1px solid currentColor;padding:10px 14px;min-height:44px;min-width:0;max-width:100%;border-radius:0}
+.demo-controls button{cursor:pointer}
+.demo-controls :focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.demo-results{display:grid;gap:16px;margin-top:24px}
+.demo-results article{border-top:1px solid currentColor;padding-top:20px;overflow-wrap:anywhere}
+.demo-results h3{font-size:21px;margin-bottom:10px}
+.demo-results p{font-size:16px;line-height:1.8}
+.demo-results p.caption{font-size:13px}
+@media(max-width:700px){.demo-controls{grid-template-columns:1fr}.demo-controls input,.demo-controls select,.demo-controls button{width:100%}}
