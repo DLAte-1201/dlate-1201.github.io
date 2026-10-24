@@ -1,47 +1,51 @@
-# 서경민 개인 포트폴리오 웹사이트
+# ReSeorch.AI · 리서치에이아이
 
-QA/SQA, AI Evaluation, 자동화 테스트 학습 기록과 프로젝트를 정리하기 위한 개인 포트폴리오 정적 웹사이트입니다.
+서경민 대표가 운영하는 개인사업자 리서치에이아이(ReSeorch.AI)의 업무와 공개 포트폴리오입니다. 명함의 업무명은 “AI Systems Evaluation & Analysis”입니다. 한국어 텍스트·오디오/TTS AI 평가 업무, 직접 판단한 공개 개인 사례, QA 경험과 개인 연구의 진행 상태를 소개합니다. 계약 업무와 개인 프로젝트, 기술 확인과 연구 결과를 구분합니다.
 
-GitHub Pages를 통해 배포했으며, HTML, CSS, JavaScript만 사용해 구성했습니다.
+업무 연락: seogm0101@gmail.com · FAX 0504-469-5898. GitHub·LinkedIn은 대표자의 기존 공개 프로필입니다.
 
-## 배포 주소
+공개 주소: https://dlate-1201.github.io/
 
-https://dlate-1201.github.io
+`assets/reseorch-ai-logo.png`는 사용자가 제공한 원본 R.AI 로고입니다. 헤더와 연락 영역에 사용하며 이미지의 색·글자·형태를 변경하지 않습니다. 명함 스캔과 QR은 포함하지 않습니다.
 
-## 주요 구성
+## 페이지 구성
 
-* **About**: QA/SQA, AI Evaluation, 자동화 테스트에 대한 관심과 학습 방향 소개
-* **Projects**: 테스트 케이스, 자동화 테스트, AI 응답 평가와 관련된 프로젝트 정리
-* **Notes / Blog**: QA 학습 기록, AI Evaluation 기준 정리, 테스트 케이스 작성 기록
-* **Contact**: 이메일과 GitHub, LinkedIn 프로필 링크
+| 경로 | 내용 |
+| --- | --- |
+| `/` | 소개, 평가 사례, 현재 평가 업무, 경력·학력, 개인 프로젝트와 연구 요약 |
+| `/practice/` | 음성 비교·QA·작업 설계·한국어 문맥의 작업 과정과 단계별 설명 |
+| `/experience/` | 업무 경력, 학력, 평가 역량·도구 및 프로젝트 활동 |
+| `/work/` | 공개 평가·QA 기록, 독립 연구와 개인 개발 프로젝트 |
+| `/work/ai-response-evaluation/` | 요청·AI 응답·당시 판단과 해석의 한계를 기록한 사례 |
+| `/work/web-qa/` | 웹 QA·기초 회귀 테스트의 확인 범위와 한계 |
+| `/research/` | 개인 연구 목록과 진행 상태 |
+| `/research/nunchi/`, `/research/mirrorrun/`, `/research/goose/` | 연구 질문·기여·진행 기록·아직 없는 결과의 구분 |
+| `/personal-development/` | 프로젝트 검토 기록과 메모 탐색·작업 상태 체험 |
+| `/en/` | 영문 요약 |
+| `/404.html` | 없는 페이지의 복귀 안내 |
 
-## 사용 기술
+연락처는 각 페이지 하단에 있습니다.
 
-* HTML
-* CSS
-* JavaScript
-* GitHub Pages
+## 화면과 동작
 
-## 파일 구성
+- Corporate Minimal의 밝은 배경·slate 본문·파란 주요 동작을 사용합니다.
+- 모바일에서는 소개·작업 사례·연구·문의 하단 탐색을, 넓은 화면에서는 상단 탐색을 제공합니다.
+- 본문 바로가기, 키보드 초점, 직접 앵커 이동과 reduced motion을 고려했습니다. 기본 콘텐츠와 탐색은 JavaScript 없이도 읽을 수 있습니다.
+- 합성 메모와 작업 상태 시연은 실제 개인 글·원장·고객 정보에 연결하지 않으며 새로고침하면 초기화됩니다.
+- 연구 준비·인간 판단·기술 확인을 실증 결과나 모델의 일반 성능으로 확대하지 않습니다.
 
-```text
-.
-├── index.html
-├── styles.css
-├── script.js
-└── README.md
-```
+## 공개 파일과 개발 경계
 
-* `index.html`: 웹사이트의 전체 구조와 콘텐츠
-* `styles.css`: 반응형 레이아웃, 라이트/다크 테마, 접근성 스타일
-* `script.js`: 모바일 메뉴, 테마 전환, 연도 표시 기능
-* `README.md`: 프로젝트 설명 문서
+이 저장소는 HTML과 `assets/`의 CSS·JavaScript·아이콘 등 정적 결과물을 제공합니다. 페이지별 `index.html`과 `404.html`을 사용하며, 현재 화면의 주 자산은 `assets/styles.css`, `assets/site.js`입니다. 루트의 `styles.css`, `script.js`는 보존된 이전 파일이며 현재 페이지의 주 자산이 아닙니다.
 
-## 주요 특징
+개발 소스와 빌드·검증 도구는 별도 작업본에서 관리합니다. 공개 파일 자체에는 서버 인증·DB·추적·외부 폰트/CDN 의존성을 추가하지 않았습니다. 화면 검증은 실제 기기·화면 낭독기 또는 전체 접근성 적합성의 인증과 다릅니다.
 
-* 별도 빌드 과정 없이 실행 가능한 정적 웹사이트
-* 모바일과 데스크톱 환경을 고려한 반응형 레이아웃
-* 라이트/다크 테마 전환 기능
-* 시맨틱 HTML 구조 사용
-* 키보드 포커스와 접근성을 고려한 스타일 적용
-* GitHub Pages를 통한 간단한 배포
+개발 작업본의 `pilot-dist`와 `public-dist`는 생성기 전용 출력입니다. 수동 `index.html`이나 다른 프로젝트를 이 안에 섞어 보존된다고 가정하면 안 됩니다. 현황판 등 별도 프로젝트는 승인된 하위 경로와 별도 자산 namespace 또는 별도 저장소를 사용하며, 포트폴리오 루트와 `/assets`를 덮어쓰지 않습니다.
+
+## 작업 과정과 시각 원본
+
+Voice AI Evaluation, Quality Assurance & Evidence, AI Systems & Orchestration, Korean Language & Context를 네 가지 작업 과정으로 소개합니다. 음성 평가와 QA는 업무 경험을 바탕으로 설명하고, 작업 구조와 한국어 맥락은 독립 프로젝트·연구로 구분합니다. 각 설명 블록의 캡션에서 자료의 성격을 확인할 수 있습니다. 파형은 음성 측정값이 아닌 합성 신호이며, 작업 데이터와 대화는 설명을 위해 작성했습니다.
+
+장면은 정지 상태로 시작하며, 사용자가 단계 버튼을 누르면 설명이 바뀝니다. JavaScript 없이도 전체 과정과 판단 범위를 읽을 수 있습니다. 영상·음성 재생, 모델 호출, 영구 저장 기능은 없습니다. 프로젝트별 SVG는 공개 기록을 바탕으로 정리한 설명도입니다.
+
+`assets/evidence.css`, `assets/evidence.js`, `assets/scene-*.svg`, `assets/project-*.svg`가 해당 화면을 구성합니다. 별도의 시각 소스 팩에는 단계별 가로·세로 SVG/PNG, 텍스트, JSON과 생성 코드가 있습니다. 사이트 루트에는 공개 정적 파일만 반영하며, 최종 push는 소유자가 담당합니다.
