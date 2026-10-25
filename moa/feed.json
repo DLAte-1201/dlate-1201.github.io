@@ -127,26 +127,26 @@
       "id": "portfolio",
       "name": "ReSeorch.AI 웹사이트",
       "kind": "general",
-      "workClass": "decision",
-      "summary": "웹사이트 게시의 범위와 진행 여부를 결정해야 합니다.",
-      "lastResultAt": "2026-10-25T16:50:47.000Z",
-      "sourceQueriedAt": "2026-10-25T17:01:46.107Z",
-      "recordCheckedAt": "2026-10-25T17:03:20.511Z",
-      "sourceUpdatedAt": "2026-10-25T17:03:20.511Z"
+      "workClass": "technical",
+      "summary": "웹사이트 게시에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-25T19:16:55.226Z",
+      "sourceQueriedAt": "2026-10-25T19:32:58.507Z",
+      "recordCheckedAt": "2026-10-25T19:33:51.251Z",
+      "sourceUpdatedAt": "2026-10-25T19:33:51.251Z"
     }
   ],
   "sourceHealth": {
     "state": "ok",
     "failedAt": null
   },
-  "factsHash": "e3a65066fbb34a353e21b49b7ccc9781272e492bbe5266ac42579e49116c7a15",
-  "dataRevision": "85e4f61f6108d7f93f8d5883e8ad29b08ed652d746f0a33e35761aaa15f9c277",
-  "generatedAt": "2026-10-25T17:04:22.843Z",
+  "factsHash": "73e7b53381ad4983f23ca6baccc1c371ebed9658dda0c996b5939f8ccf41872f",
+  "dataRevision": "a317f6e1db0c75e0bd018524c2c2f38fa6008c119f4a7760dd258a6040b4d9e4",
+  "generatedAt": "2026-10-25T19:34:10.641Z",
   "publication": {
-    "feedRevision": "536fe102f79c59737949954a6342333aa9ca5062f04a65b2f20c616f16964183",
-    "commit": "04b5ee43292fcb4e609122152414218ad5254eb3",
-    "deployedAt": "2026-10-25T16:43:25Z",
-    "verifiedAt": "2026-10-25T16:44:43.603Z"
+    "feedRevision": "85e4f61f6108d7f93f8d5883e8ad29b08ed652d746f0a33e35761aaa15f9c277",
+    "commit": "eedea91863b3adc1876a95de1aebbee59ee8a47c",
+    "deployedAt": "2026-10-25T19:24:35Z",
+    "verifiedAt": "2026-10-25T19:25:27.981Z"
   },
-  "revision": "5039db04fdbae77dae364b0bc5936dcf6df118056133eb90d18f6fbc95e57acd"
+  "revision": "9e246965bc9282c4b9fab2aef179ef3c7f557ab6cee34bacc83ab8b3d72bb7ba"
 }
