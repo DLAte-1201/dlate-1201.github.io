@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko" data-theme="academic-modern" data-archetype="web">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MOA 프로젝트 진행 현황. 공개 범위에 포함된 프로젝트의 이름과 진행 상태를 보여 줍니다.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="moa-public-revision" content="19fa6c4fae4210b979d66d6cdafaae20028336810624648e2fd58e9496158548">
+  <title>MOA · Material Of All</title>
+  <link rel="stylesheet" href="styles.css?v=5c61275a79423a010fb5c17955f76df83687f63c5c90f0718ecdc2a1787c3a45">
+
+  <script defer src="dates.js?v=dff840454c1741b1342053b20096a25c7851e2805dbe13d2b5f518163faf1ab5"></script>
+  <script defer src="storage.js?v=a504947c3f167efc9994dd617400a456d7a23e71b252cf47c03881899a85d69c"></script>
+  <script defer src="feed.js?v=ed67c6d6d2646bec39594ad7ace7ba7b34aaa9164173261e68ec937e16a1cced"></script><script defer src="app.js?v=fda84fd987154bafb340b4a764a1fc5c8c1e95973facda39d1bf22665a265340"></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로</a>
+<header><a class="brand" href="#main"><strong>MOA</strong><span>Material Of All</span></a><span class="edition">공개용 현황판</span></header>
+<main id="main">
+  <section class="intro"><p class="eyebrow">PROJECT OVERVIEW</p><h1>프로젝트 진행 현황</h1><p>프로젝트별 상태와 공개용 요약, 기록 확인시각을 함께 살펴보세요.</p><p class="scope" id="scope"></p></section>
+  <aside class="feed-panel" aria-label="공개 자료 갱신 상태"><strong id="feed-health" role="status" aria-live="polite">자료 확인 중</strong><p id="feed-times"></p><p>공개 자료를 10분마다 다시 확인합니다. 새 자료는 실제 게시가 성공한 뒤 반영됩니다. 최근 확인되지 않은 자료는 오래됨을 표시하며 실시간 연결이나 담당 작업 실행을 뜻하지 않습니다.</p><button id="refresh-feed">공개 자료 다시 확인</button></aside><aside class="scope-note"><strong>개인 분류는 이 브라우저에만 저장됩니다.</strong><p>개인 분류는 확인된 주 상태·집계를 바꾸지 않습니다. 원격 저장이나 실제 담당 작업에 중단·재개 요청을 전달하는 기능은 없습니다. 개인 메모·키·내부 경로·비공개 원문·상세 승인 내용은 공개 자료에 포함하지 않습니다.</p></aside>
+  <section aria-label="공개 프로젝트 작업 현황 요약" id="summary" class="summary"></section>
+  <section aria-label="프로젝트 찾기" class="filters">
+    <label for="search">프로젝트 검색</label><input id="search" type="search" placeholder="이름으로 찾기" autocomplete="off">
+    <div id="kinds" class="buttons" aria-label="프로젝트 종류"><button data-kind="all" aria-pressed="true">전체</button><button data-kind="research" aria-pressed="false">연구</button><button data-kind="general" aria-pressed="false">일반</button></div>
+    <div id="status-filters" class="buttons" aria-label="진행 상태별 보기"></div>
+  </section>
+  <section aria-labelledby="collection-title"><div class="section-head"><h2 id="collection-title">공개 프로젝트</h2><span id="result-count" aria-live="polite"></span></div><div id="projects" class="project-grid" tabindex="-1"></div><div id="empty" class="empty" hidden><h3>검색 결과가 없습니다</h3><p>검색어나 진행 상태 필터를 바꿔 보세요.</p><button id="clear-filters">모든 프로젝트 보기</button></div></section>
+  <p id="save-status" role="status" aria-live="polite"></p><p id="storage-warning" role="alert" hidden></p><button id="reread" class="text-button">개인 분류 다시 불러오기</button>
+  <details id="advanced"><summary>고급 백업</summary><p>이 공개용 화면에서 정리한 개인 분류만 백업합니다. 다른 현황판의 백업 파일은 가져올 수 없습니다.</p><div class="buttons"><button id="export-backup">JSON 내보내기</button><label class="file-label">JSON 가져오기<input id="import-file" type="file" accept="application/json,.json"></label></div><div id="import-preview" hidden></div></details>
+  <footer><span>MOA · Material Of All</span><span id="build-revision"></span></footer>
+</main>
+<dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>프로젝트 정보</span><button id="close-detail" aria-label="프로젝트 상세 닫기">닫기</button></div><div id="detail-content"></div><p id="detail-feedback" role="status" aria-live="polite"></p></dialog>
+</body>
+</html>
