@@ -17,12 +17,12 @@
       "id": "nunchi",
       "name": "Nunchi",
       "kind": "research",
-      "workClass": "technical",
-      "summary": "수집 준비에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
-      "lastResultAt": "2026-10-25T15:17:15Z",
-      "sourceQueriedAt": "2026-10-25T15:32:02.494Z",
-      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
-      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
+      "workClass": "active",
+      "summary": "수집 준비 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-25T15:58:38Z",
+      "sourceQueriedAt": "2026-10-25T16:33:24.187Z",
+      "recordCheckedAt": "2026-10-25T16:39:43.520Z",
+      "sourceUpdatedAt": "2026-10-25T16:39:43.520Z"
     },
     {
       "id": "goose",
@@ -31,9 +31,9 @@
       "workClass": "technical",
       "summary": "연결 단계에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
       "lastResultAt": null,
-      "sourceQueriedAt": "2026-10-25T15:32:10.722Z",
-      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
-      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
+      "sourceQueriedAt": "2026-10-25T16:31:26.259Z",
+      "recordCheckedAt": "2026-10-25T16:39:43.520Z",
+      "sourceUpdatedAt": "2026-10-25T16:39:43.520Z"
     },
     {
       "id": "anchor",
@@ -127,26 +127,26 @@
       "id": "portfolio",
       "name": "ReSeorch.AI 웹사이트",
       "kind": "general",
-      "workClass": "active",
-      "summary": "웹사이트 게시 작업을 진행하고 있습니다.",
-      "lastResultAt": "2026-10-25T15:19:13Z",
-      "sourceQueriedAt": "2026-10-25T15:32:08.027Z",
-      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
-      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
+      "workClass": "decision",
+      "summary": "웹사이트 게시의 범위와 진행 여부를 결정해야 합니다.",
+      "lastResultAt": "2026-10-25T16:17:10Z",
+      "sourceQueriedAt": "2026-10-25T16:31:23.307Z",
+      "recordCheckedAt": "2026-10-25T16:39:43.520Z",
+      "sourceUpdatedAt": "2026-10-25T16:39:43.520Z"
     }
   ],
   "sourceHealth": {
     "state": "ok",
     "failedAt": null
   },
-  "factsHash": "d5fe054cc73d25fb70e9a1b8df338747d5593b21dbdb5cd2d301ce21c81c1639",
-  "dataRevision": "6cea5c6be313dfcf5a28dd8ebeb190a53eded8e12f41b4db2a041d1ff4f7a7ef",
-  "generatedAt": "2026-10-25T15:37:43.638Z",
+  "factsHash": "6420d850f5b703dc219070a65496dd61758fb03b765143e7a882f88881f14129",
+  "dataRevision": "536fe102f79c59737949954a6342333aa9ca5062f04a65b2f20c616f16964183",
+  "generatedAt": "2026-10-25T16:41:27.138Z",
   "publication": {
     "feedRevision": "6cea5c6be313dfcf5a28dd8ebeb190a53eded8e12f41b4db2a041d1ff4f7a7ef",
     "commit": "00ccc858347be025361a38a69e3062db38b21012",
     "deployedAt": "2026-10-25T15:48:00Z",
     "verifiedAt": "2026-10-25T15:49:17.142Z"
   },
-  "revision": "87c6070142824ad8e0f67ce9a55fef0ce3c2f0665f8c4094f1c052a25e792c49"
+  "revision": "950fbbd5859c50fa2af88a5221c6a5765f22eac61b7fa6703e4dad99fadc0801"
 }
