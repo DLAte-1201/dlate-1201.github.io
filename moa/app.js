@@ -13,7 +13,7 @@ try{read();}catch(e){storageError=true;notify(e.message,true);}
 function detail(){
  const p=projects.find(p=>p.id===selected);if(!p)return;
  const latest=state.latest[p.id],stale=Date.now()-Date.parse(p.recordCheckedAt)>1200000;
- $('#detail-content').innerHTML='<span class="detail-kind">'+kindName(p.kind)+' 프로젝트</span><h2 id="detail-title">'+esc(p.name)+'</h2><p>확인된 주 상태 · <span class="badge">'+labels[p.workClass]+'</span></p><p>'+esc(p.summary)+'</p><dl class="feed-times"><dt>마지막으로 기록된 결과시각</dt><dd>'+date(p.lastResultAt)+'</dd><dt>최근 출처 조회</dt><dd>'+date(p.sourceQueriedAt)+'</dd><dt>자료 확인(현황판 수신)</dt><dd>'+date(p.recordCheckedAt)+(stale?' · 최근 확인되지 않음':'')+'</dd><dt>현황 반영</dt><dd>'+date(p.sourceUpdatedAt)+'</dd></dl><p class="detail-note">기록을 다시 조회한 시각은 실제 작업·결과 발생시각과 다릅니다. 공개용 요약만 표시하며 개인 자료와 상세 근거는 공개하지 않습니다.</p><section class="manage"><label for="manage-status">내 개인 분류</label><select id="manage-status" '+(storageError?'disabled':'')+'>'+Object.entries(STATUSES).map(([k,v])=>'<option value="'+k+'" '+(personal(p)===k?'selected':'')+'>'+v+'</option>').join('')+'</select><p>개인 분류는 이 브라우저에만 저장되며 주 상태·집계와 별개입니다. 실제 담당 작업에 중단·재개 요청을 전달하지 않습니다.</p><div class="buttons"><button id="reset-status" '+(storageError||!latest?.status?'disabled':'')+'>기본 분류로 되돌리기</button><button id="restore-status" '+(storageError||!state.history[p.id]?.length?'disabled':'')+'>이전 분류로 되돌리기</button></div></section>';
+ $('#detail-content').innerHTML='<span class="detail-kind">'+kindName(p.kind)+' 프로젝트</span><h2 id="detail-title">'+esc(p.name)+'</h2><p>확인된 주 상태 · <span class="badge">'+labels[p.workClass]+'</span></p><p>'+esc(p.summary)+'</p><dl class="feed-times"><dt>최근 결과</dt><dd>'+date(p.lastResultAt)+'</dd><dt>출처 조회</dt><dd>'+date(p.sourceQueriedAt)+'</dd><dt>자료 확인</dt><dd>'+date(p.recordCheckedAt)+(stale?' · 최근 확인되지 않음':'')+'</dd><dt>현황 갱신</dt><dd>'+date(p.sourceUpdatedAt)+'</dd></dl><section class="manage"><label for="manage-status">내 분류 · 이 기기에만 저장</label><select id="manage-status" '+(storageError?'disabled':'')+'>'+Object.entries(STATUSES).map(([k,v])=>'<option value="'+k+'" '+(personal(p)===k?'selected':'')+'>'+v+'</option>').join('')+'</select><div class="buttons"><button id="reset-status" '+(storageError||!latest?.status?'disabled':'')+'>내 분류 초기화</button><button id="restore-status" '+(storageError||!state.history[p.id]?.length?'disabled':'')+'>내 분류 되돌리기</button></div></section>';
 }
 function render(){
  const activeId=document.activeElement?.id;
@@ -25,7 +25,7 @@ function render(){
  const order=Object.keys(labels),sorted=[...found].sort((a,b)=>order.indexOf(a.workClass)-order.indexOf(b.workClass));
  $('#projects').innerHTML=sorted.map((p,i,list)=>(i===0||list[i-1].workClass!==p.workClass?'<div class="status-group-heading"><h3>'+labels[p.workClass]+' <span>'+found.filter(q=>q.workClass===p.workClass).length+'</span></h3></div>':'')+'<article class="project-card" data-project="'+p.id+'"><div class="card-top"><span>'+kindName(p.kind)+'</span><span class="badge">'+labels[p.workClass]+'</span></div><h3>'+esc(p.name)+'</h3><p>'+esc(p.summary)+'</p><p class="card-checked" data-checked="'+p.id+'"></p><button data-detail="'+p.id+'">프로젝트 보기</button></article>').join('');
  $('#empty').hidden=!data||!!found.length;
- $('#scope').textContent=data?'공개 프로젝트 '+projects.length+'개 · 카드별 확인시각을 함께 확인하세요.':feedView?.error?'공개 자료를 불러오지 못했습니다.':'공개 자료를 불러오는 중입니다.';
+ $('#scope').textContent=data?'공개 프로젝트 '+projects.length+'개':feedView?.error?'공개 자료를 불러오지 못했습니다.':'공개 자료를 불러오는 중입니다.';
  $('#storage-warning').hidden=!storageError&&!state.damaged.length;
  $('#storage-warning').textContent=storageError?'개인 분류를 읽거나 저장하지 못했습니다. 공개 현황은 계속 표시합니다.':state.damaged.length+'개의 해석할 수 없는 개인 기록을 그대로 보존했습니다.';
  if(selected)detail();if(activeId&&$('#detail-dialog').open)document.getElementById(activeId)?.focus();
@@ -35,16 +35,16 @@ function ageCards(){for(const p of projects){const el=document.querySelector('[d
 function renderFeed(view){
  feedView=view;
  const refreshButton=$('#refresh-feed');refreshButton.disabled=!!view.checking;refreshButton.setAttribute('aria-busy',String(!!view.checking));refreshButton.textContent=view.checking?'확인 중…':'공개 자료 다시 확인';
- const names={unavailable:'공개 자료를 확인하지 못했습니다.',overdue:'최근 확인되지 않은 자료가 있습니다.',recentlyChecked:'최근 담당 기록 확인자료입니다.','recently-checked':'최근 담당 기록 확인자료입니다.','fetch-failed':'공개 자료 재조회 실패 · 이전 자료를 표시합니다.','source-unconfirmed':'자료 출처 확인이 실패해 기존 현황을 표시합니다.'};
+ const names={unavailable:'공개 자료를 확인하지 못했습니다.',overdue:'최근 확인되지 않은 자료가 있습니다.',recentlyChecked:'자료 확인 완료','recently-checked':'자료 확인 완료','fetch-failed':'공개 자료 재조회 실패 · 이전 자료를 표시합니다.','source-unconfirmed':'자료 출처 확인이 실패해 기존 현황을 표시합니다.'};
  $('#feed-health').textContent=view.checking?'공개 자료를 확인하고 있습니다.':names[view.state]||'자료 확인 중';
  $('#feed-health').dataset.state=view.state;
  $('#refresh-feedback').textContent=view.checking?'':view.lastFetchOutcome==='unchanged'?'공개 자료 확인 완료 · 변경 없음 · '+date(view.lastAttemptFinishedAt,true):view.lastFetchOutcome==='updated'?'공개 자료 확인 완료 · 새 자료 반영 · '+date(view.lastAttemptFinishedAt,true):view.lastFetchOutcome==='failed'?'공개 자료 재조회 실패 · 이전 자료 유지':'';
- const pub=view.lastConfirmedPublication;
- $('#feed-times').textContent='자료 생성: '+date(view.data?.generatedAt)+' · 이 화면의 재조회: '+date(view.lastFetchedAt,true)+' · 현재 자료 게시시각: '+date(view.publishedAt)+(pub&&!view.publishedAt?' · 이전 자료 게시 확인: '+date(pub.verifiedAt):'');
+ const updatedAt=view.data?.projects?.reduce((latest,p)=>!latest||Date.parse(p.sourceUpdatedAt)>Date.parse(latest)?p.sourceUpdatedAt:latest,null);
+ $('#feed-times').textContent='10분마다 갱신 · 마지막 갱신 '+date(updatedAt);
  if(view.data&&view.data.revision!==lastRevision){data=view.data;projects=data.projects;lastRevision=data.revision;render();}
  else if(!data)render();else ageCards();
 }
-function mutate(action,value){try{state=action==='restore'?store.restore(selected):store.set(selected,value);storageError=false;render();notify('개인 분류를 이 브라우저에 저장했습니다.');$('#manage-status')?.focus();}catch(e){storageError=true;render();notify(e.message,true);}}
+function mutate(action,value){try{state=action==='restore'?store.restore(selected):store.set(selected,value);storageError=false;render();notify('내 분류를 저장했습니다.');$('#manage-status')?.focus();}catch(e){storageError=true;render();notify(e.message,true);}}
 document.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b)return;
  if(b.dataset.kind){kind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(el=>el.setAttribute('aria-pressed',el.dataset.kind===kind));render();}
