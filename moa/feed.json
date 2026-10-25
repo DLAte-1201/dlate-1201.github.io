@@ -18,22 +18,22 @@
       "name": "Nunchi",
       "kind": "research",
       "workClass": "technical",
-      "summary": "수집 준비에 대한 독립 검토 결과를 기다리고 있습니다.",
-      "lastResultAt": "2026-10-25T14:25:16Z",
-      "sourceQueriedAt": "2026-10-25T12:29:31Z",
-      "recordCheckedAt": "2026-10-25T14:34:41.495Z",
-      "sourceUpdatedAt": "2026-10-25T14:34:41.495Z"
+      "summary": "수집 준비에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-25T15:17:15Z",
+      "sourceQueriedAt": "2026-10-25T15:32:02.494Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     },
     {
       "id": "goose",
       "name": "Goose",
       "kind": "research",
-      "workClass": "decision",
-      "summary": "연결 단계의 범위와 진행 여부를 결정해야 합니다.",
+      "workClass": "technical",
+      "summary": "연결 단계에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
       "lastResultAt": null,
-      "sourceQueriedAt": "2026-10-25T13:25:53Z",
-      "recordCheckedAt": "2026-10-25T13:31:18.735Z",
-      "sourceUpdatedAt": "2026-10-25T13:31:18.735Z"
+      "sourceQueriedAt": "2026-10-25T15:32:10.722Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     },
     {
       "id": "anchor",
@@ -51,11 +51,11 @@
       "name": "Groundwork",
       "kind": "research",
       "workClass": "technical",
-      "summary": "검증 도구에 필요한 기술 조건을 확인하고 있습니다.",
+      "summary": "검증 도구에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
       "lastResultAt": null,
-      "sourceQueriedAt": "2026-10-25T12:30:41Z",
-      "recordCheckedAt": "2026-10-25T14:34:41.495Z",
-      "sourceUpdatedAt": "2026-10-25T14:34:41.495Z"
+      "sourceQueriedAt": "2026-10-25T15:32:00.930Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     },
     {
       "id": "skill-dividend",
@@ -74,10 +74,10 @@
       "kind": "research",
       "workClass": "decision",
       "summary": "판정·연결 준비의 범위와 진행 여부를 결정해야 합니다.",
-      "lastResultAt": "2026-10-25T00:38:55+09:00",
-      "sourceQueriedAt": "2026-10-25T12:27:09Z",
-      "recordCheckedAt": "2026-10-25T12:38:16.181Z",
-      "sourceUpdatedAt": "2026-10-25T12:38:16.181Z"
+      "lastResultAt": "2026-10-25T14:50:09Z",
+      "sourceQueriedAt": "2026-10-25T15:32:04.699Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     },
     {
       "id": "back-on-track",
@@ -96,10 +96,10 @@
       "kind": "research",
       "workClass": "technical",
       "summary": "검증 준비에 필요한 기술 조건을 확인하고 있습니다.",
-      "lastResultAt": null,
-      "sourceQueriedAt": "2026-10-25T12:12:11Z",
-      "recordCheckedAt": "2026-10-25T12:38:16.181Z",
-      "sourceUpdatedAt": "2026-10-25T12:38:16.181Z"
+      "lastResultAt": "2026-10-25T14:47:42Z",
+      "sourceQueriedAt": "2026-10-25T15:32:06.315Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     },
     {
       "id": "pick-up-the-thread",
@@ -127,26 +127,26 @@
       "id": "portfolio",
       "name": "ReSeorch.AI 웹사이트",
       "kind": "general",
-      "workClass": "technical",
-      "summary": "웹사이트 게시에 필요한 기술 조건을 확인하고 있습니다.",
-      "lastResultAt": "2026-10-25T14:23:45Z",
-      "sourceQueriedAt": "2026-10-25T11:58:02Z",
-      "recordCheckedAt": "2026-10-25T14:34:41.495Z",
-      "sourceUpdatedAt": "2026-10-25T14:34:41.495Z"
+      "workClass": "active",
+      "summary": "웹사이트 게시 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-25T15:19:13Z",
+      "sourceQueriedAt": "2026-10-25T15:32:08.027Z",
+      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
+      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
     }
   ],
   "sourceHealth": {
     "state": "ok",
     "failedAt": null
   },
-  "factsHash": "29a6e51f7f94c13b6ec693f73c20c073c720dd660b6d7a5ee6b9de3ef52c3caa",
-  "dataRevision": "c18097216cc786c425f0e785cfd7e9b107e4ef176bf59eff7f5f4a5ac6e0dbcc",
-  "generatedAt": "2026-10-25T15:12:00.323Z",
+  "factsHash": "d5fe054cc73d25fb70e9a1b8df338747d5593b21dbdb5cd2d301ce21c81c1639",
+  "dataRevision": "6cea5c6be313dfcf5a28dd8ebeb190a53eded8e12f41b4db2a041d1ff4f7a7ef",
+  "generatedAt": "2026-10-25T15:37:43.638Z",
   "publication": {
-    "feedRevision": "d5cf6b9a9035be1f8f80fbf352d73bd9fdcac3d0abaa33d5e3e2b7df3c0fdd9c",
-    "commit": "c6663b09f5228da76fd0058af940c13994913c09",
-    "deployedAt": "2026-10-25T13:20:44Z",
-    "verifiedAt": "2026-10-25T15:10:19.987Z"
+    "feedRevision": "c18097216cc786c425f0e785cfd7e9b107e4ef176bf59eff7f5f4a5ac6e0dbcc",
+    "commit": "66d8628fd7d1cc63e80456a688b15b981b6d8440",
+    "deployedAt": "2026-10-25T15:14:36Z",
+    "verifiedAt": "2026-10-25T15:15:42.116Z"
   },
-  "revision": "699780602c31c175c54ead0f987f5af69707533d5adbbfbde809ed8574a106de"
+  "revision": "80869a83df5c77f0058235d3848e50b7d51fbbbff75ba470467d29a679026f7a"
 }
