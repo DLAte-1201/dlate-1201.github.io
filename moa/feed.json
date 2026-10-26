@@ -51,11 +51,11 @@
       "name": "Groundwork",
       "kind": "research",
       "workClass": "technical",
-      "summary": "검증 도구에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
+      "summary": "검증 도구에 필요한 기술 조건을 확인하고 있습니다.",
       "lastResultAt": null,
-      "sourceQueriedAt": "2026-10-25T15:32:00.930Z",
-      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
-      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
+      "sourceQueriedAt": "2026-10-26T06:24:59.435Z",
+      "recordCheckedAt": "2026-10-26T06:27:56.994Z",
+      "sourceUpdatedAt": "2026-10-26T06:27:56.994Z"
     },
     {
       "id": "skill-dividend",
@@ -96,10 +96,10 @@
       "kind": "research",
       "workClass": "technical",
       "summary": "검증 준비에 필요한 기술 조건을 확인하고 있습니다.",
-      "lastResultAt": "2026-10-25T14:47:42Z",
-      "sourceQueriedAt": "2026-10-25T15:32:06.315Z",
-      "recordCheckedAt": "2026-10-25T15:35:18.816Z",
-      "sourceUpdatedAt": "2026-10-25T15:35:18.816Z"
+      "lastResultAt": "2026-10-26T06:35:49.000Z",
+      "sourceQueriedAt": "2026-10-26T06:39:51.591Z",
+      "recordCheckedAt": "2026-10-26T06:41:16.752Z",
+      "sourceUpdatedAt": "2026-10-26T06:41:16.752Z"
     },
     {
       "id": "pick-up-the-thread",
@@ -118,35 +118,35 @@
       "kind": "general",
       "workClass": "input",
       "summary": "기존 결과 대조에 필요한 자료를 기다리고 있습니다.",
-      "lastResultAt": null,
-      "sourceQueriedAt": null,
-      "recordCheckedAt": "2026-10-25T02:20:28+09:00",
-      "sourceUpdatedAt": "2026-10-24T11:21:13.000Z"
+      "lastResultAt": "2026-10-26T06:33:17.699Z",
+      "sourceQueriedAt": "2026-10-26T06:39:49.347Z",
+      "recordCheckedAt": "2026-10-26T06:41:16.752Z",
+      "sourceUpdatedAt": "2026-10-26T06:41:16.752Z"
     },
     {
       "id": "portfolio",
       "name": "ReSeorch.AI 웹사이트",
       "kind": "general",
-      "workClass": "technical",
-      "summary": "웹사이트 게시에 필요한 조건을 확인하며 준비 작업을 진행하고 있습니다.",
-      "lastResultAt": "2026-10-25T19:16:55.226Z",
-      "sourceQueriedAt": "2026-10-25T19:32:58.507Z",
-      "recordCheckedAt": "2026-10-25T19:33:51.251Z",
-      "sourceUpdatedAt": "2026-10-25T19:33:51.251Z"
+      "workClass": "active",
+      "summary": "웹사이트 관리 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-25T19:40:48.970Z",
+      "sourceQueriedAt": "2026-10-26T06:25:04.688Z",
+      "recordCheckedAt": "2026-10-26T06:27:56.994Z",
+      "sourceUpdatedAt": "2026-10-26T06:27:56.994Z"
     }
   ],
   "sourceHealth": {
     "state": "ok",
     "failedAt": null
   },
-  "factsHash": "73e7b53381ad4983f23ca6baccc1c371ebed9658dda0c996b5939f8ccf41872f",
-  "dataRevision": "a317f6e1db0c75e0bd018524c2c2f38fa6008c119f4a7760dd258a6040b4d9e4",
-  "generatedAt": "2026-10-25T19:34:10.641Z",
+  "factsHash": "92030773a11b520af8e20217e98c012a097b31d08306b259ddb924beaccdd33f",
+  "dataRevision": "c32b8b5cc906a104daff0079a79f8ac9c8229cdffbc7912bb030e762feaae54e",
+  "generatedAt": "2026-10-26T06:46:53.109Z",
   "publication": {
-    "feedRevision": "85e4f61f6108d7f93f8d5883e8ad29b08ed652d746f0a33e35761aaa15f9c277",
-    "commit": "eedea91863b3adc1876a95de1aebbee59ee8a47c",
-    "deployedAt": "2026-10-25T19:24:35Z",
-    "verifiedAt": "2026-10-25T19:25:27.981Z"
+    "feedRevision": "a317f6e1db0c75e0bd018524c2c2f38fa6008c119f4a7760dd258a6040b4d9e4",
+    "commit": "1a5444e065f6215dafc486144f476a05800bde81",
+    "deployedAt": "2026-10-25T19:35:20Z",
+    "verifiedAt": "2026-10-25T19:35:54.719Z"
   },
-  "revision": "9e246965bc9282c4b9fab2aef179ef3c7f557ab6cee34bacc83ab8b3d72bb7ba"
+  "revision": "73ed7e94f5797e689db4615c7a0861b69decc505c0b11f6a949bb5187c9c6007"
 }
