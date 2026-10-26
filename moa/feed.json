@@ -52,21 +52,21 @@
       "kind": "research",
       "workClass": "decision",
       "summary": "검증 도구의 범위와 진행 여부를 결정해야 합니다.",
-      "lastResultAt": "2026-10-26T07:12:54.553Z",
+      "lastResultAt": "2026-10-26T08:21:53.000Z",
       "sourceQueriedAt": "2026-10-26T06:24:59.435Z",
-      "recordCheckedAt": "2026-10-26T07:17:21.188Z",
-      "sourceUpdatedAt": "2026-10-26T07:17:21.188Z"
+      "recordCheckedAt": "2026-10-26T08:28:03.716Z",
+      "sourceUpdatedAt": "2026-10-26T08:28:03.716Z"
     },
     {
       "id": "skill-dividend",
       "name": "Skill Dividend",
       "kind": "research",
-      "workClass": "input",
-      "summary": "효과 검토에 필요한 자료를 기다리고 있습니다.",
-      "lastResultAt": null,
+      "workClass": "active",
+      "summary": "효과 검토 작업을 진행하고 있습니다.",
+      "lastResultAt": "2026-10-26T08:59:49.000Z",
       "sourceQueriedAt": null,
-      "recordCheckedAt": "2026-10-25T02:20:28+09:00",
-      "sourceUpdatedAt": "2026-10-24T06:29:56.732Z"
+      "recordCheckedAt": "2026-10-26T09:05:20.140Z",
+      "sourceUpdatedAt": "2026-10-26T09:05:20.140Z"
     },
     {
       "id": "pass-the-buck",
@@ -139,14 +139,14 @@
     "state": "ok",
     "failedAt": null
   },
-  "factsHash": "5c21943be5c9239a373caf0e68a2853a4c25a9353d19c85c068b820a775de54e",
-  "dataRevision": "02d48cf2d829ff15916ffb8574ce89f5b7abb35e3c7b78c3031adb08058b977c",
-  "generatedAt": "2026-10-26T07:20:50.683Z",
+  "factsHash": "e251a4d61b5fdd3c9438ecf4f5800c4b567bef7da14dad9bb3d08f0e4ae1b29f",
+  "dataRevision": "f3fe94f7551f0e5d6a42e4158b538ebd9e9b017236202c9c137224a75b283cdf",
+  "generatedAt": "2026-10-26T10:54:37.774Z",
   "publication": {
-    "feedRevision": "c32b8b5cc906a104daff0079a79f8ac9c8229cdffbc7912bb030e762feaae54e",
-    "commit": "498c45e66613fe551163a4bcded6136bfc5bd9e2",
-    "deployedAt": "2026-10-26T06:48:05Z",
-    "verifiedAt": "2026-10-26T06:48:45.482Z"
+    "feedRevision": "02d48cf2d829ff15916ffb8574ce89f5b7abb35e3c7b78c3031adb08058b977c",
+    "commit": "1df95cbd5d172d8bd05fc728e4828c1d69287bb1",
+    "deployedAt": "2026-10-26T10:47:48Z",
+    "verifiedAt": "2026-10-26T10:53:25.226Z"
   },
-  "revision": "5db69d9561a9646dafc5ebc6611b49b964107e83a304dea3fa23a14de87c8c50"
+  "revision": "86bfef2dbf27fa9637446f02f6d4c2b7efa6b223f811cc1593f6de9875305044"
 }
