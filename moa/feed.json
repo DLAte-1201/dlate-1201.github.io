@@ -143,10 +143,10 @@
   "dataRevision": "c32b8b5cc906a104daff0079a79f8ac9c8229cdffbc7912bb030e762feaae54e",
   "generatedAt": "2026-10-26T06:46:53.109Z",
   "publication": {
-    "feedRevision": "a317f6e1db0c75e0bd018524c2c2f38fa6008c119f4a7760dd258a6040b4d9e4",
-    "commit": "1a5444e065f6215dafc486144f476a05800bde81",
-    "deployedAt": "2026-10-25T19:35:20Z",
-    "verifiedAt": "2026-10-25T19:35:54.719Z"
+    "feedRevision": "c32b8b5cc906a104daff0079a79f8ac9c8229cdffbc7912bb030e762feaae54e",
+    "commit": "498c45e66613fe551163a4bcded6136bfc5bd9e2",
+    "deployedAt": "2026-10-26T06:48:05Z",
+    "verifiedAt": "2026-10-26T06:48:45.482Z"
   },
-  "revision": "73ed7e94f5797e689db4615c7a0861b69decc505c0b11f6a949bb5187c9c6007"
+  "revision": "d230360468e0c31926ffb88ad7431abd5104b07d29ccdb5a7071a1137fbabfe4"
 }

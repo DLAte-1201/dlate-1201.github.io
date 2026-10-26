@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="MOA 프로젝트 진행 현황. 공개 범위에 포함된 프로젝트의 이름과 진행 상태를 보여 줍니다.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <meta name="moa-public-revision" content="1cd90a53ff1e40325df5ab837ea369e4dc92266520df81bd64103fcfcf695368">
+  <meta name="moa-public-revision" content="11533d080d8530cc8235d82356c3c7f4713bdf95bd09b125ac8b10288e96c8c7">
   <title>MOA · Material Of All</title>
-  <link rel="stylesheet" href="styles.css?v=5c61275a79423a010fb5c17955f76df83687f63c5c90f0718ecdc2a1787c3a45">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ctitle%3EMOA%20%EB%B3%B4%EA%B4%80%ED%95%A8%3C%2Ftitle%3E%3Cpath%20fill%3D%22%23F5F6F3%22%20d%3D%22M0%200h32v32H0z%22%2F%3E%3Cpath%20fill%3D%22%23215F78%22%20d%3D%22M4%202h24v28H4z%22%2F%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M8%206h16v8H8zM8%2018h16v8H8z%22%2F%3E%3Cpath%20fill%3D%22%23215F78%22%20d%3D%22M12%208h8v2h-8zM12%2020h8v2h-8z%22%2F%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="styles.css?v=755d08ea87b423d6c5cbcf5b514f50cfe80f65218045b2ec9c13e23234314d00">
 
   <script defer src="dates.js?v=dff840454c1741b1342053b20096a25c7851e2805dbe13d2b5f518163faf1ab5"></script>
   <script defer src="storage.js?v=a504947c3f167efc9994dd617400a456d7a23e71b252cf47c03881899a85d69c"></script>
@@ -15,7 +16,7 @@
 </head>
 <body>
 <a class="skip" href="#main">본문으로</a>
-<header><a class="brand" href="#main"><strong>MOA</strong><span>Material Of All</span></a><span class="edition">공개용 현황판</span></header>
+<header><a class="brand" href="#main" aria-label="MOA 처음 화면으로"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>MOA 보관함</title><path fill="#F5F6F3" d="M0 0h32v32H0z"/><path fill="#215F78" d="M4 2h24v28H4z"/><path fill="#FFFFFF" d="M8 6h16v8H8zM8 18h16v8H8z"/><path fill="#215F78" d="M12 8h8v2h-8zM12 20h8v2h-8z"/></svg><span class="brand-wordmark"><strong>MOA</strong><span>Material Of All</span></span></a><span class="edition">공개용 현황판</span></header>
 <main id="main">
   <section class="intro"><p class="eyebrow">PROJECT OVERVIEW</p><h1>프로젝트 진행 현황</h1><p>프로젝트별 상태와 공개용 요약, 기록 확인시각을 함께 살펴보세요.</p><p class="scope" id="scope"></p></section>
   <aside class="feed-panel" aria-label="공개 자료 갱신 상태"><strong id="feed-health" role="status" aria-live="polite">자료 확인 중</strong><p id="feed-times">10분마다 갱신 · 마지막 갱신 미확인</p><p id="refresh-feedback" role="status" aria-live="polite"></p><button id="refresh-feed">공개 자료 다시 확인</button></aside>

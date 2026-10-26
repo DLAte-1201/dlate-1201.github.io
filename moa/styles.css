@@ -91,3 +91,8 @@ html[data-theme="academic-modern"] header{background:#fff;border-bottom:1px soli
 .status-group-heading{grid-column:1/-1;padding:15px 0 8px;border-bottom:1px solid #c4cece}.status-group-heading h3{font-size:1.1rem;margin:0}.status-group-heading h3 span{margin-left:12px}html[data-theme="academic-modern"] .summary{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:700px){html[data-theme="academic-modern"] .summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .feed-panel{border:1px solid var(--line);border-left:4px solid #215f78;padding:20px;margin:20px 0;min-width:0;background:#fff}.feed-panel p,.feed-times,.card-checked{font-size:.88rem;line-height:1.7;overflow-wrap:anywhere}.feed-panel [data-state=overdue],.feed-panel [data-state=fetch-failed],.feed-panel [data-state=source-unconfirmed],[data-stale=true]{color:#8a3e22}.feed-times dt{font-weight:700;margin-top:12px}.feed-times dd{margin-left:0}.card-checked{color:var(--muted);margin-top:auto}.summary{grid-template-columns:repeat(auto-fit,minmax(145px,1fr))}@media(max-width:480px){.feed-panel{padding:16px}.feed-panel button{width:100%}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* MOA cabinet symbol; embedded favicon preserves the eight public assets. */
+.brand{flex-direction:row;align-items:center;gap:10px}
+.brand>svg{display:block;width:32px;height:32px;flex:none}
+.brand-wordmark{display:flex;flex-direction:column}
