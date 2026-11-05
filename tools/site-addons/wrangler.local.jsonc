@@ -1,0 +1,12 @@
+{
+  "name": "glance-contact-local",
+  "main": "worker/contact.mjs",
+  "compatibility_date": "2025-10-11",
+  "workers_dev": false,
+  "d1_databases": [{
+    "binding": "CONTACT_DB",
+    "database_name": "contact-local",
+    "database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "migrations"
+  }]
+}
