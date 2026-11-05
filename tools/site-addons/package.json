@@ -1,0 +1,14 @@
+{
+  "name": "glance-site-addons",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "dev": "wrangler dev --config wrangler.local.jsonc",
+    "db:local": "wrangler d1 migrations apply CONTACT_DB --local --config wrangler.local.jsonc",
+    "check:worker": "wrangler deploy --dry-run --config wrangler.local.jsonc --outdir .worker-build"
+  },
+  "dependencies": { "cheerio": "1.1.2", "sharp": "0.34.5" },
+  "devDependencies": { "wrangler": "4.45.0", "miniflare": "4.20251011.1" }
+}

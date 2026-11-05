@@ -49,3 +49,7 @@ Voice AI Evaluation, Quality Assurance & Evidence, AI Systems & Orchestration, K
 장면은 정지 상태로 시작하며, 사용자가 단계 버튼을 누르면 설명이 바뀝니다. JavaScript 없이도 전체 과정과 판단 범위를 읽을 수 있습니다. 영상·음성 재생, 모델 호출, 영구 저장 기능은 없습니다. 프로젝트별 SVG는 공개 기록을 바탕으로 정리한 설명도입니다.
 
 `assets/evidence.css`, `assets/evidence.js`, `assets/scene-*.svg`, `assets/project-*.svg`가 해당 화면을 구성합니다. 별도의 시각 소스 팩에는 단계별 가로·세로 SVG/PNG, 텍스트, JSON과 생성 코드가 있습니다. 사이트 루트에는 공개 정적 파일만 반영하며, 최종 push는 소유자가 담당합니다.
+
+## T5 백엔드·빌드 도구
+
+문의 Worker, OG 이미지 생성, AVIF/WebP 변환과 Cloudflare Web Analytics 빌드 후처리 도구는 [tools/site-addons/README.md](tools/site-addons/README.md)에 있습니다. 공개 정적 출력과 분리한 도구이며, 개발 작업본의 빌드 연결과 Cloudflare 실환경 검증은 아직 완료되지 않았습니다.
